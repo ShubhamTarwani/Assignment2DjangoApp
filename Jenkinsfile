@@ -1,24 +1,20 @@
 pipeline {
     agent any
-
     stages {
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/Agasya27/srceom-agasya-butolia-sl-3-Ass-2.git'
+                git 'https://github.com/ShubhamTarwani/Assignment2DjangoApp.git'
             }
         }
         stage('Build Docker Image') {
             steps {
-                script {
-                    sh 'docker build -t agasya27/studentproject .'
-                }
+                sh 'docker build -t shubhamtarwani1/studentproject .'
             }
         }
-        stage('Push Docker Image') {
+        stage('Push to Docker Hub') {
             steps {
-                script {
-                    sh 'docker login -u agasya27 -p Agasya2005'
-                    sh 'docker push agasya27/studentproject'
+                withDockerRegistry([credentialsId: 'shubhamtarwani1', url: '']) {
+                    sh 'docker push shubhamtarwani1/studentproject'
                 }
             }
         }

@@ -3,370 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zepto</title>
-</head>
-<body style="font-family: sans-serif; margin: 0; padding: 0; background-color: #f9f9f9;">
-
-    <!-- Header -->
-    <header style="background-color: #fff; padding: 15px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://images.seeklogo.com/logo-png/48/1/zepto-logo-png_seeklogo-480639.png" alt="Zepto Logo" style="height: 30px; margin-left: 10px;">
-        <div style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search Products" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; margin-right: 10px; width: 200px;">
-            <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;">Search</button>
-        </div>
-        <div style="margin-right: 10px">
-          Cart
-        </div>
-    </header>
-
-    <!-- Product Listings -->
-    <section style="padding: 20px;">
-        <h2 style="color: #333; margin-bottom: 10px;">Deals and Offers</h2>
-        <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;"> <!-- Adjusted alignment -->
-
-            <!-- Product 1 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Organic Bananas</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹319</span>
-                    <span style="color: #e40046; font-weight: bold;">₹239</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 2 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Farm Fresh Apples</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹269</span>
-                    <span style="color: #e40046; font-weight: bold;">₹204</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">18% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 3 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Juicy Oranges</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹419</span>
-                    <span style="color: #e40046; font-weight: bold;">₹314</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 4 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Sweet Strawberries</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹189</span>
-                    <span style="color: #e40046; font-weight: bold;">₹142</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 5 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Fresh Blueberries</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹219</span>
-                    <span style="color: #e40046; font-weight: bold;">₹164</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 6 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Ripe Mangoes</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹149</span>
-                    <span style="color: #e40046; font-weight: bold;">₹112</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 7 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Green Grapes</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹389</span>
-                    <span style="color: #e40046; font-weight: bold;">₹292</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 8 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Sweet Pears</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹249</span>
-                    <span style="color: #e40046; font-weight: bold;">₹187</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 9 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Red Cherries</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹329</span>
-                    <span style="color: #e40046; font-weight: bold;">₹247</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 10 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Black Plums</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹289</span>
-                    <span style="color: #e40046; font-weight: bold;">₹217</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-             <!-- Product 11 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Local Mango</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹199</span>
-                    <span style="color: #e40046; font-weight: bold;">₹149</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 12 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">StrawBerry</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹259</span>
-                    <span style="color: #e40046; font-weight: bold;">₹194</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>... <!-- Product 13 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Banana</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹339</span>
-                    <span style="color: #e40046; font-weight: bold;">₹254</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 14 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Orange</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹279</span>
-                    <span style="color: #e40046; font-weight: bold;">₹209</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 15 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Kiwi</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹309</span>
-                    <span style="color: #e40046; font-weight: bold;">₹232</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 16 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Black berry</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹229</span>
-                    <span style="color: #e40046; font-weight: bold;">₹172</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 17 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Litchi</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹399</span>
-                    <span style="color: #e40046; font-weight: bold;">₹299</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 18 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Pomogranate</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹179</span>
-                    <span style="color: #e40046; font-weight: bold;">₹134</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 19 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Guava</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹359</span>
-                    <span style="color: #e40046; font-weight: bold;">₹269</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 20 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Jack Fruit</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹299</span>
-                    <span style="color: #e40046; font-weight: bold;">₹224</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-             <!-- Product 21 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Avocado</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹319</span>
-                    <span style="color: #e40046; font-weight: bold;">₹239</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 22 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Dates</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹269</span>
-                    <span style="color: #e40046; font-weight: bold;">₹204</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">18% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 23 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">PineApple</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹419</span>
-                    <span style="color: #e40046; font-weight: bold;">₹314</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 24 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Grapes</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹189</span>
-                    <span style="color: #e40046; font-weight: bold;">₹142</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-            </div>
-
-            <!-- Product 25 -->
-            <div style="width: 180px; margin: 10px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px; text-align: center;">
-                <p style="font-weight: bold; margin: 5px 0;">Custard Apple</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <span style="color: #888; text-decoration: line-through; margin-right: 5px;">₹219</span>
-                    <span style="color: #e40046; font-weight: bold;">₹164</span>
-                    <span style="color: green; font-size: 0.8em; margin-left: 5px;">25% Off</span>
-                </div>
-                 <button style="background-color: #4CAF50; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-top: 5px;">Add to Cart</button>
-    </div>
-            
-
-        
-    
-        </div>
-    </section>
-     <section style="padding: 20px;">
-        <h2 style="color: #333; margin-bottom: 10px;">Shop by Category</h2>
-        <div style="display: flex; overflow-x: auto; padding-bottom: 10px;">
-
-            <div style="min-width: 100px; margin-right: 10px; text-align: center;">
-                
-                <p style="font-size: 0.8em; margin-top: 5px;">Fruits</p>
-            </div>
-
-             <div style="min-width: 100px; margin-right: 10px; text-align: center;">
-                
-                <p style="font-size: 0.8em; margin-top: 5px;">Vegetables</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="text-align: center; padding: 20px; background-color: #eee; font-size: small;">
-        &copy; 2025 Zepto 
-    </footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<!DOCTYPE html>
-<html>
-<head>
-    <title>App2 Page</title>
+    <title>Porsche Showroom: Sedans & 911 Lineup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .search-bar {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        aside {
+            width: 200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #d5001c;
+            margin-bottom: 10px;
+        }
+
+        .car-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .car-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .car-card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .car-card .price {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #d5001c;
+        }
+
+        .car-card button {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .car-card button:hover {
+            background-color: #d5001c;
+        }
+    </style>
 </head>
 <body>
-    <h2>This is App2's sample page.</h2>
-    <a href="/">Back to Homepage</a>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://1000logos.net/wp-content/uploads/2020/02/Porsche-Logo.png" alt="Logo">
+            <strong>Porsche Showroom: Sedans & 911 Lineup</strong>
+        </div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Models</a>
+            <a href="#">Showroom</a>
+            <a href="#">Contact</a>
+            <input type="text" class="search-bar" placeholder="Search Porsche Models">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Sidebar -->
+        <aside>
+            <h4>Porsche Models</h4>
+            <ul>
+                <li><a href="#">Porsche Sedans</a></li>
+                <li><a href="#">Porsche 911 Lineup</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Car Content -->
+        <section class="content">
+            <h2>Porsche Sedan Lineup</h2>
+            <div class="car-grid">
+                <!-- Porsche Sedans -->
+                <div class="car-card">
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/j1-modelimage-taycan-4s-high/normal/6c402520-3a29-11ed-80e2-005056bbdc38;sN;twebp/porsche-normal.webp" alt="Porsche Taycan">
+                    <h3>Porsche Taycan</h3>
+                    <p>Innovative, fully electric sedan with impressive range and performance.</p>
+                    <p class="price">Starting at $86,700</p>
+                    <button>Add to Wishlist</button>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/pa-modelimage-panamera/normal/a5113b3e-64d8-11ed-80f4-005056bbdc38;sN;twebp/porsche-normal.webp" alt="Porsche Panamera">
+                    <h3>Porsche Panamera</h3>
+                    <p>Luxury sedan offering the perfect mix of sport and comfort.</p>
+                    <p class="price">Starting at $93,850</p>
+                    <button>Add to Wishlist</button>
+                </div>
+            </div>
+
+            <h2>Porsche 911 Lineup</h2>
+            <div class="car-grid">
+                <!-- Porsche 911 Models -->
+                <div class="car-card">
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/992-c4-modelimage-sideshot/normal/f4b2d400-0000-4b70-a41f-bb12d57d671e;sL;twebp/porsche-normal.webp" alt="Porsche 911 Carrera">
+                    <h3>Porsche 911 Carrera</h3>
+                    <p>Iconic sports car delivering exhilarating performance and agility.</p>
+                    <p class="price">Starting at $114,400</p>
+                    <button>Add to Wishlist</button>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/992-turbo-modelimage-sideshot/normal/aee453ea-df20-4b20-8c08-bfa905be6f7b;sL;twebp/porsche-normal.webp" alt="Porsche 911 Turbo S">
+                    <h3>Porsche 911 Turbo S</h3>
+                    <p>The ultimate 911 with twin-turbocharged engine and track-level power.</p>
+                    <p class="price">Starting at $216,000</p>
+                    <button>Add to Wishlist</button>
+                </div>
+
+                <div class="car-card">
+                    <img src="https://files.porsche.com/filestore/image/multimedia/none/992-turbo-modelimage-sideshot/normal/aee453ea-df20-4b20-8c08-bfa905be6f7b;sL;twebp/porsche-normal.webp" alt="Porsche 911 GT3 RS">
+                    <h3>Porsche 911 GT3 RS</h3>
+                    <p>A track-focused monster with precision aerodynamics and race-ready tech.</p>
+                    <p class="price">Starting at $223,800</p>
+                    <button>Add to Wishlist</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
--->
