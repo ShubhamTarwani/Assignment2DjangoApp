@@ -17,7 +17,10 @@ A multi-app Django project containerized with Docker and automated using Jenkins
 - Docker Hub Repository:https://hub.docker.com/repository/docker/shubhamtarwani1/studentproject/general
 
 ##Output
+1)Homepage
 ![image](https://github.com/user-attachments/assets/156e3060-34b6-4868-9ce9-bfc391db1cd3)
+2)Sedans
 ![image](https://github.com/user-attachments/assets/b4749a7c-4a42-4c89-b2be-cc07d9cf7fc8)
+3)Suvs
 ![image](https://github.com/user-attachments/assets/2e8ab6ea-5217-4e4c-aafc-b3b9c2c241fc)
 
